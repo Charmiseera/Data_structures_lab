@@ -1,14 +1,21 @@
 #include<stdio.h>
-int main(){
-	int array[7];
+int main()
+{
+	int n,sum=0;
 	int i;
-	for( i=0;i<7;i++){
-		printf("enter the element %d: ",i+1);
+	printf("enter the number of elements ");
+	scanf("%d",&n);
+	int array[n];
+	printf("enter %d elements",n);
+	for(i=0;i<n;i++)
 		scanf("%d",&array[i]);
+	
+	for(i=0;i<n;i++){
+		sum +=array[i];
 	}
-	printf("elements in the array:");
-	for( i=0;i<7;i++){
-		printf("%d",array[i]);
-	}
-	return 0;
+	printf("sum of elements %d",sum);
+	return 0;
+	
+	
+	
 }
